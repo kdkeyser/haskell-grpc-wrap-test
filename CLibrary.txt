@@ -1,0 +1,19 @@
+Initial focus: bidirectional streaming RPC
+
+- Create CompletionQueue
+  - Creates an associated POSIX thread that loops a "Next" call on the CompletionQueue
+- Destory CompletionQueue
+  - Stop associated thread
+- Create RPC
+  - Input
+    - CompletionQueue
+    - Callback RPC ready
+    - Callback Message read
+    - Callback Message sent
+  - Output
+    - RPC "object"
+- Write message
+  - Input
+    - RPC "object"
+    - message
+
