@@ -36,7 +36,7 @@ RUN cd protobuf && \
     make install && \
     ldconfig
 
-RUN git clone https://github.com/grpc/grpc.git -b release-0_13
+RUN git clone https://github.com/grpc/grpc.git -b release-0_13_1
 
 RUN cd grpc && git submodule update --init
 
